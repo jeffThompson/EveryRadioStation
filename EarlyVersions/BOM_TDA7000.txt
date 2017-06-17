@@ -1,0 +1,56 @@
+RADIO PARTS
+
+TDA7000 IC
+http://www.futurlec.com/Philips/TDA7000pr.shtml
+
+3.5-turn Variable Coil
+http://electronics-diy.com/product_details.php?pid=147&name=3.5%20Turns%20High%20Precision%20Variable%20Coil%20%2865%20-%2079nH%29
+
+Varicap Diode
+http://electronics-diy.com/product_details.php?pid=138&name=MV2105%20-%202-16%20pF%20Varicap%20Diode%20%28BB105,%20BB205%29
+
+- - - - - - - -
+
+1nF (1000pF) - 1x
+http://www.mouser.com/ProductDetail/Kemet/C315C102K1G5CA/?qs=sGAEpiMZZMuAYrNc52CMZKaako6zo7mHEYHIF7UlwRM%3d
+
+2.2nF (2200pF) - 1x
+http://www.mouser.com/ProductDetail/Kemet/C322C222J5G5CA7301/?qs=sGAEpiMZZMuAYrNc52CMZIIPYbpTjY%2fHhN73EnUsT%252bs%3d
+
+3.3nF (3300pF) - 2x
+http://www.mouser.com/ProductDetail/Kemet/C320C332K5R5CA7303/?qs=sGAEpiMZZMuAYrNc52CMZBidhUxfRPPTV%2fUkqUGoIS0%3d
+
+10nF (0.01uF) - 1x
+http://www.mouser.com/ProductDetail/Kemet/C317C103K5R5TA/?qs=sGAEpiMZZMuAYrNc52CMZN%2fcvgMPYjd%252bO849EhTCwBk%3d
+
+22nF (0.022uF - 1x
+http://www.mouser.com/ProductDetail/TDK/FK14X7R1H224K/?qs=sGAEpiMZZMuAYrNc52CMZGH05pWz8dc0d6NumRGlSWk%3d
+
+100nF (0.1uF) - 3x
+http://www.mouser.com/Search/ProductDetail.aspx?R=FK26X7R1E105Kvirtualkey52130000virtualkey810-FK26X7R1E105K
+
+- - - - - - - -
+
+150pF - 1x
+http://www.mouser.com/Search/ProductDetail.aspx?R=C315C151J1G5TAvirtualkey64600000virtualkey80-C315C151J1G
+
+180pF - 2x
+http://www.mouser.com/ProductDetail/Vishay-BC-Components/K181J15C0GF53L2/?qs=sGAEpiMZZMuAYrNc52CMZLWcWg%252bissMDN3nt%252bh%2ftHXY%3d
+
+220pF - 2x
+http://www.mouser.com/ProductDetail/Vishay-BC-Components/K221J15C0GH5TL2/?qs=sGAEpiMZZMuAYrNc52CMZNxUZIkgrUkjyB55FGLPZ58%3d
+
+300pF - 2x
+http://www.mouser.com/ProductDetail/Murata/RPE5C1H301J2P1A03B/?qs=sGAEpiMZZMuAYrNc52CMZGlxvDuj07GLjzQC%252b7SPqrE%3d
+
+- - - - - - - -
+
+22k - 1x
+http://www.mouser.com/ProductDetail/KOA-Speer/MF1-4DC2202F/?qs=sGAEpiMZZMsPqMdJzcrNwljpQe3YaMZM1zZUxxb%2fDHI%3d
+
+100k - 1x
+http://www.mouser.com/ProductDetail/Xicon/270-100K-RC/?qs=sGAEpiMZZMsPqMdJzcrNwlXWIga6NKq%2feGlftqSTssU%3d
+
+100k pot - 1x
+http://www.mouser.com/Search/ProductDetail.aspx?R=3362R-1-104LFvirtualkey65210000virtualkey652-3362R-1-104LF
+

@@ -1,0 +1,60 @@
+
+NOTES && IDEAS
+
+TODO
+
+[ ] create github repo
+[ ] design connections between boxes for power, mechanical connection
+[ ] how to hang from wall?
+
+- - -
+
+https://learn.sparkfun.com/tutorials/si4703-fm-radio-receiver-hookup-guide
+
+- - -
+
+FM band from 97.5 - 107.9 MHz (in North America)
+Separated by 2's on the odd numbers
+
+87.5, 87.7, 87.9
+- three stations
+
+90.1, 90.3, 90.5, 90.7, 90.9
+- five stations per block like this...
+
+91, 92, 93, 94, 95, 96, 97, 98, 99, 100,
+101, 102, 103, 104, 105, 106, 107
+- 17 blocks of 5 = 85
+
+Total number of possible FM radio stations:
+3 + 5 + 85 = 93
+
+- - -
+
+AM band from 535 - 1705 kHz (in North America)
+Separated by 10's
+
+535 (effectively 540), 550, 560, 570, 580, 590
+- block of six stations
+
+600, 700, 800, 900, 1000, 1100, 1200, 1300, 
+1400, 1500, 1600
+- 11 blocks of 10 stations = 1100
+
+1705 (effectively (1700)
+- last station
+
+Total number of possible AM radio stations:
+6 + 1100 + 1 = 1107
+
+- - -
+
+Total number of possible AM and FM radio stations in 
+any given place in North America: 1,200
+
+- https://www.sparkfun.com/products/12938
+- http://www.silabs.com/Support%20Documents/TechnicalDocs/Si4831-35-B30.pdf
+- possible SDR method: https://github.com/hpdvanwyk/fm-multimix
+- https://github.com/kpreid/shinysdr
+
+
