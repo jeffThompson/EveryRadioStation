@@ -49,16 +49,29 @@ Si4703_Breakout radios[8] = {
   Si4703_Breakout(9, SDIO, SCLK)
 };
 
+// optional: use pre-determined volumes for each radio
+// can be used to lessen the volume of really loud stations
+// values in adjustment array should be -15 – +15
+const boolean useVolumeAdjustments = false;
+const int[8] volumeAdjustments = {
+  0, 0, 0, 0, 0, 0, 0, 0
+};
+
 // jumper pins to set volume
 // if neither connected, will be set to max volume
 // via: http://forum.arduino.cc/index.php?topic=20131.msg148010#msg148010
-int volTestPin = 11;                // pin to test against, in between the low and medium pins
+const int volTestPin =     11;      // pin to test against, in between the low and medium pins
                                     // (means you can't accidentally connect it wrong)
-int lowVolPin =  10;                // if connected, set to low volume
-int medVolPin =  12;                // ditto to medium volume
+const int lowVolPin =      10;      // if connected, set to low volume
+const int medVolPin =      12;      // ditto to medium volume
 
-boolean tuneEvenStations = false;   // tune even-numbered stations (ex 88.8)
-                                    // really only for European installs, leave alone otherwise
+const boolean tuneEvenStations = false;   // tune even-numbered stations (ex 88.8)
+                                          // really only for European installs, leave alone otherwise
+
+const boolean delayStart = true;          // delay start so they all come on in one nice row?
+                                          // super not-necessary, but fun
+const int startupDelay =   540;           // millis to delay for each set to begin
+
 
 void setup() {
 
@@ -99,18 +112,39 @@ void setup() {
     Serial.println(volume);
   }
 
+  // delay starting, so they all come on in a nice long row
+  if (delayStart) {
+    delay(whichSection * startupDelay);
+  }
+
   // start up all the radios in this section
-  if (debug) Serial.println("Starting radios...");
+  if (debug) {
+    Serial.println("Starting radios...");
+    if (useVolumeAdjustments) {
+      Serial.println("(using individual volume adjustments)");
+    }
+  }
   for (int i=0; i<numRadios; i++) {
     selectOutput(i);                          // select I2C output channel
     radios[i].powerOn();                      // turn it on
     int channel = startChannel + (i*2);       // FM moves by 2, after 99.5 is 99.7, etc
-    radios[i].setChannel(channel);   
-    radios[i].setVolume(volume);              // turn it up
-
+    radios[i].setChannel(channel);
     if (debug) {
-      Serial.print("- ");
-      Serial.println(channel);
+      Serial.print("- freq: ");
+      Serial.print(channel);
+    }
+    
+    // set volume, either to value set by jumper
+    // or adjusted individually
+    int vol = volume;
+    if (useVolumeAdjustments) {
+      vol += volumeAdjustments[i];
+      vol = constrain(vol, 0,15);
+    }
+    radios[i].setVolume(vol);
+    if (debug) {
+      Serial.print(", vol: ");
+      Serial.println(vol);
     }
   }
 
