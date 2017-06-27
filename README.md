@@ -2,7 +2,7 @@
 
 # EVERY RADIO STATION
 
-An installation of 93 software-defined FM radios, one for each station in the FM band, each playing simultaneously.
+An installation of 95 software-defined FM radios, one for each station in the FM band, each playing simultaneously.
 
 ## CONTENTS  
 
