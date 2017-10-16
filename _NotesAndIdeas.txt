@@ -3,9 +3,42 @@ NOTES && IDEAS
 
 TODO
 
-[ ] create github repo
-[ ] design connections between boxes for power, mechanical connection
-[ ] how to hang from wall?
+[ ] write up desc for website (already in db)
+
+[X] design connections between boxes
+[X] how to hang from wall?
+[X] two power supplies, for stacked version?
+	- or intermediary cord between them?
+	- maybe could have separate box for power, make two
+		- one with a single plug in the bottom
+		- one with plug in bottom, connector on top?
+[X] hole template for marking large speaker hole, smaller 
+    mounting ones too
+[X] figure out mounting holes for power supply
+[X] how to mount PCBs to piece?
+	- lasercut template
+	- spraypaint to show area to use
+	- foam tape to secure
+	
+- - -
+
+95 total radios
+- 12 per section, final section has 11
+- covers 87.5–107.9
+- should work everywhere except Japan and maybe Eastern Europe/Russia
+- in Europe, bands may go by 100kHz inc instead of 200, so we might miss some
+	- option in code to go odd (ie 99.1) or even (99.2) in case that's helpful
+
+- - -
+
+https://www.thingiverse.com/thing:683669/#comments
+
+POWER SUPPLY – LS35 (3.3V)
+
+L = live line in
+N = neutral line in
+
+should be at least 15mm (0.6") from anything on vent sides
 
 - - -
 
@@ -13,7 +46,7 @@ https://learn.sparkfun.com/tutorials/si4703-fm-radio-receiver-hookup-guide
 
 - - -
 
-FM band from 97.5 - 107.9 MHz (in North America)
+FM band from 87.5 - 107.9 MHz (in North America)
 Separated by 2's on the odd numbers
 
 87.5, 87.7, 87.9
@@ -28,6 +61,135 @@ Separated by 2's on the odd numbers
 
 Total number of possible FM radio stations:
 3 + 5 + 85 = 93
+
++ #0
+	0	875
+	1	877
+	2	879
+	3	881
+	4	883
+	5	885
+	6	887
+	7	889
+
++ #1
+	0	891
+	1	893
+	2	895
+	3	897
+	4	899
+	5	901
+	6	903
+	7	905
+
++ #2
+	0	907
+	1	909
+	2	911
+	3	913
+	4	915
+	5	917
+	6	919
+	7	921
+
++ #3
+	0	923
+	1	925
+	2	927
+	3	929
+	4	931
+	5	933
+	6	935
+	7	937
+	
++ #4
+	0	939
+	1	941
+	2	943
+	3	945
+	4	947
+	5	949
+	6	951
+	7	953
+
++ #5
+	0	955
+	1	957
+	2	959
+	3	961
+	4	963
+	5	965
+	6	967
+	7	969
+
++ #6
+	0	971
+	1	973
+	2	975
+	3	977
+	4	979
+	5	981
+	6	983
+	7	985
+
++ #7
+	0	987
+	1	989
+	2	991
+	3	993
+	4	995
+	5	997
+	6	999
+	7	1001
+
++ #8
+	0	1003
+	1	1005
+	2	1007
+	3	1009
+	4	1011
+	5	1013
+	6	1015
+	7	1017
+
++ #9
+	0	1019
+	1	1021
+	2	1023
+	3	1025
+	4	1027
+	5	1029
+	6	1031
+	7	1033
+	0	1035
+	1	1037
+
+#10	
+	2	1039
+	3	1041
+	4	1043
+	5	1045
+	6	1047
+	7	1049
+	0	1051
+	1	1053
+
+#11
+	2	1055
+	3	1057
+	4	1059
+	5	1061
+	6	1063
+	7	1065
+	8	1067
+
+	
+oops
+	7	1069
+	0	1071
+	1	1073
+	2	1075
+	3	1079
 
 - - -
 
@@ -56,5 +218,4 @@ any given place in North America: 1,200
 - http://www.silabs.com/Support%20Documents/TechnicalDocs/Si4831-35-B30.pdf
 - possible SDR method: https://github.com/hpdvanwyk/fm-multimix
 - https://github.com/kpreid/shinysdr
-
 
