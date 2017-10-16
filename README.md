@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/jeffThompson/EveryRadioStation/master/Renderings/Mockup7-web.jpg)
+![](http://jeffreythompson.org/images/ers-detail.jpg)
 
 # EVERY RADIO STATION
 
